@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+}
+.well {
+  background-color: salmon;
+}
+#belowWell {
+  background-color: light green;
+}
+.pide {
+  display: none;
+}

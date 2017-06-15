@@ -6,16 +6,18 @@ $(document).ready(function() {
     var favFood = $("#favFood").val();
     var clothes = $("#clothes").val();
     var shoes = $("#shoes").val();
-    var stuff = [activity, favFood];
-    var stuff2 = [clothes, shoes];
+    var stuff = [activity, favFood, clothes, shoes];
+
 
 
     $(".firstName").text(firstName);
     $(".lastName").text(lastName);
-    $("#favStuff").text(stuff);
-    $("#food").text(stuff);
+    $("#favStuff").text(stuff[3]);
+    $("#food").text(stuff[2] + " and " + stuff[3]);
+    $("li").text(stuff[0]);
     // $("#favStuff").text(stuff2);
     // $("#food").text(stuff2);
+
 
     event.preventDefault();
     $(".pide").show();
